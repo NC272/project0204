@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Triangle_Rom_synth_1" LaunchDir="D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Triangle_Rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Square_Rom_synth_1" LaunchDir="D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Square_Rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="Sin_Rom_synth_1" LaunchDir="D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Sin_Rom_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_5_10_synth_1" LaunchDir="D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/clk_5_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 23 17:09:06 2020
+| Host         : LAPTOP-J4K0GMMC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s15ftgb196-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_5_10'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_5_10 (xilinx.com:ip:clk_wiz:6.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 23 17:09:03 2020
+| Host         : LAPTOP-J4K0GMMC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s15ftgb196-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Triangle_Rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Triangle_Rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 23 17:09:02 2020
+| Host         : LAPTOP-J4K0GMMC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s15ftgb196-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Square_Rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Square_Rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 23 17:09:01 2020
+| Host         : LAPTOP-J4K0GMMC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7s15ftgb196-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Sin_Rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Sin_Rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 1) to (Rev. 2)
+

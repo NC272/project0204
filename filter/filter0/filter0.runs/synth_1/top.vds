@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 11:05:07 2020
+# Process ID: 10284
+# Current directory: D:/vivado_project/filter0/filter0.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/vivado_project/filter0/filter0.runs/synth_1/top.vds
+# Journal file: D:/vivado_project/filter0/filter0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_project/SEA-master/Examples/FPGA-IP/ADC-IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivado_project/SEA-master/Examples/FPGA-IP/DAC-IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17556 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 396.598 ; gain = 104.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/vivado_project/filter0/filter0.runs/synth_1/.Xil/Vivado-10284-LAPTOP-J4K0GMMC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/vivado_project/filter0/filter0.runs/synth_1/.Xil/Vivado-10284-LAPTOP-J4K0GMMC/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_10' of module 'clk_wiz_0' requires 5 connections, but only 3 given [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:39]
+INFO: [Synth 8-6157] synthesizing module 'Driver_ADC_0' [D:/vivado_project/filter0/filter0.runs/synth_1/.Xil/Vivado-10284-LAPTOP-J4K0GMMC/realtime/Driver_ADC_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_ADC_0' (2#1) [D:/vivado_project/filter0/filter0.runs/synth_1/.Xil/Vivado-10284-LAPTOP-J4K0GMMC/realtime/Driver_ADC_0_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'Period' does not match port width (18) of module 'Driver_ADC_0' [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:50]
+INFO: [Synth 8-6157] synthesizing module 'DAC_Driver' [D:/vivado_project/filter0/filter0.srcs/sources_1/new/DAC_Driver.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_project/filter0/filter0.srcs/sources_1/new/DAC_Driver.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'DAC_Driver' (3#1) [D:/vivado_project/filter0/filter0.srcs/sources_1/new/DAC_Driver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'filter0' [D:/vivado_project/filter0/filter0.srcs/sources_1/new/filter0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'filter0' (4#1) [D:/vivado_project/filter0/filter0.srcs/sources_1/new/filter0.v:23]
+WARNING: [Synth 8-3848] Net clk_DAC in module/entity top does not have driver. [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:26]
+WARNING: [Synth 8-3848] Net Read_Addr in module/entity top does not have driver. [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design DAC_Driver has unconnected port clk_100MHz
+WARNING: [Synth 8-3331] design DAC_Driver has unconnected port DAC_En
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.652 ; gain = 160.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DAC_Driver:clk_DAC to constant 0 [D:/vivado_project/filter0/filter0.srcs/sources_1/new/top.v:55]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.652 ; gain = 160.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 452.652 ; gain = 160.191
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vivado_project/filter0/filter0.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0/Driver_ADC_0_in_context.xdc] for cell 'Driver_ADC_0'
+Finished Parsing XDC File [d:/vivado_project/filter0/filter0.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0/Driver_ADC_0_in_context.xdc] for cell 'Driver_ADC_0'
+Parsing XDC File [d:/vivado_project/filter0/filter0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [d:/vivado_project/filter0/filter0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ADC_En'. [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'ADC_En'. [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'clk_ADC'. [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'clk_ADC'. [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc:9]
+Finished Parsing XDC File [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado_project/filter0/filter0.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 751.477 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 751.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 751.477 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 751.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/vivado_project/filter0/filter0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/vivado_project/filter0/filter0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Driver_ADC_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 9     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DAC_Driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  20 Input      1 Bit        Muxes := 3     
+Module filter0 
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input     16 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 9     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'filter0/delay_pipeline9_reg[0]' (FD) to 'filter0/multi_data8_reg[0]'
+INFO: [Synth 8-3886] merging instance 'filter0/delay_pipeline3_reg[0]' (FD) to 'filter0/multi_data2_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out2' to pin 'clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 751.477 ; gain = 459.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module clk_10 has unconnected pin reset
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Driver_ADC_0 has unconnected pin Read_Addr[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |Driver_ADC_0  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |Driver_ADC_0 |     1|
+|2     |clk_wiz_0    |     1|
+|3     |IBUF         |     8|
+|4     |OBUF         |     2|
+|5     |OBUFT        |     1|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    42|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 19 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 753.789 ; gain = 162.504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 753.789 ; gain = 461.328
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 763.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 12 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 763.508 ; gain = 483.418
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 763.508 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_project/filter0/filter0.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 11:05:30 2020...

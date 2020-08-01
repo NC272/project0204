@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 30 16:17:36 2020
+# Process ID: 24084
+# Current directory: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16404 D:\vivado_project\SEA-master\Examples\FPGA\4.Module-Interface\DAC-Interface\DAC_Demo\DAC_Demo.xpr
+# Log file: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/vivado.log
+# Journal file: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+close_sim
+launch_simulation
+source testbench.tcl
+run all
+update_compile_order -fileset sources_1
+relaunch_sim
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl
+close_sim

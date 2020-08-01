@@ -1,0 +1,537 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 08:23:41 2020
+# Process ID: 21364
+# Current directory: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11540 D:\vivado_project\SEA-master\Examples\FPGA\4.Module-Interface\DAC-Interface\DAC_Demo\DAC_Demo.xpr
+# Log file: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/vivado.log
+# Journal file: D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 721.223 ; gain = 98.484
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/sim/Triangle_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triangle_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Square_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_Demo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b1df4dff70e5423a93de1576d5b711cd --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:38]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'Phase' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_5_10_clk_wiz
+Compiling module xil_defaultlib.clk_5_10
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Square_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Triangle_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.DAC_Demo
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Square.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Triangle.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.test.clk_division.inst.plle2_adv_inst are not same.
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 835.656 ; gain = 30.574
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 835.656 ; gain = 30.574
+run all
+run: Time (s): cpu = 00:00:38 ; elapsed = 00:06:38 . Memory (MB): peak = 846.336 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/sim/Triangle_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triangle_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Square_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_Demo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'DAC_Data' is not allowed [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b1df4dff70e5423a93de1576d5b711cd --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'Phase' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_5_10_clk_wiz
+Compiling module xil_defaultlib.clk_5_10
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Square_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Triangle_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.DAC_Demo
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Square.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Triangle.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.test.clk_division.inst.plle2_adv_inst are not same.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 846.336 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:37 ; elapsed = 00:06:40 . Memory (MB): peak = 846.336 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 867.520 ; gain = 16.531
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/sim/Triangle_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triangle_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Square_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_Demo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'DAC_Data' is not allowed [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b1df4dff70e5423a93de1576d5b711cd --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'Phase' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_5_10_clk_wiz
+Compiling module xil_defaultlib.clk_5_10
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Square_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Triangle_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.DAC_Demo
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Square.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Triangle.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.test.clk_division.inst.plle2_adv_inst are not same.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 867.520 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:01:44 . Memory (MB): peak = 867.520 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/sim/Triangle_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triangle_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Square_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DAC_Demo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'DAC_Data' is not allowed [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b1df4dff70e5423a93de1576d5b711cd --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'Phase' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_5_10_clk_wiz
+Compiling module xil_defaultlib.clk_5_10
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Square_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Triangle_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.DAC_Demo
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Square.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Triangle.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.test.clk_division.inst.plle2_adv_inst are not same.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 867.520 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:58 ; elapsed = 00:11:25 . Memory (MB): peak = 867.520 ; gain = 0.000
+close [ open D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/wave_generator.v w ]
+add_files D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/wave_generator.v
+update_compile_order -fileset sources_1
+set_property top wave_generator [current_fileset]
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Sin_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Square_Wave_Rom.coe'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Rom.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/Triangle_Wave_Rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/sim/Triangle_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Triangle_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Square_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/sim/Sin_Rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sin_Rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_5_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Division
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDS_Addr_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Driver_DAC
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'DAC_Data' is not allowed [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:43]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/wave_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wave_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto b1df4dff70e5423a93de1576d5b711cd --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'DAC_En' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/wave_generator.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 9 for port 'Phase' [D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/wave_generator.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_5_10_clk_wiz
+Compiling module xil_defaultlib.clk_5_10
+Compiling module xil_defaultlib.Clk_Division
+Compiling module xil_defaultlib.DDS_Addr_Generator
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Sin_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Square_Rom
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="spa...
+Compiling module xil_defaultlib.Triangle_Rom
+Compiling module xil_defaultlib.Driver_DAC
+Compiling module xil_defaultlib.wave_generator
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Sin.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Square.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.test.Driver_DAC0.Rom_Triangle.inst.native_mem_module.blk_mem_gen_v8_4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.test.clk_division.inst.plle2_adv_inst are not same.
+relaunch_xsim_kernel: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 885.637 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 885.637 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:01:09 ; elapsed = 00:12:28 . Memory (MB): peak = 885.637 ; gain = 0.000
+save_wave_config {D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/testbench_behav.wcfg
+set_property xsim.view D:/vivado_project/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 18:31:58 2020...
